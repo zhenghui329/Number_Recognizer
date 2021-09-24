@@ -1,0 +1,68 @@
+rc lizhenghui$ python train.py
+WARNING:tensorflow:From train.py:49: read_data_sets (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+WARNING:tensorflow:From /Users/lizhenghui/Library/Python/2.7/lib/python/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:260: maybe_download (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please write your own downloading logic.
+WARNING:tensorflow:From /Users/lizhenghui/Library/Python/2.7/lib/python/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:262: extract_images (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+Extracting ./MNIST_data/train-images-idx3-ubyte.gz
+WARNING:tensorflow:From /Users/lizhenghui/Library/Python/2.7/lib/python/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:267: extract_labels (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+Extracting ./MNIST_data/train-labels-idx1-ubyte.gz
+WARNING:tensorflow:From /Users/lizhenghui/Library/Python/2.7/lib/python/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:110: dense_to_one_hot (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.one_hot on tensors.
+Extracting ./MNIST_data/t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data/t10k-labels-idx1-ubyte.gz
+WARNING:tensorflow:From /Users/lizhenghui/Library/Python/2.7/lib/python/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:290: __init__ (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+WARNING:tensorflow:From train.py:50: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+WARNING:tensorflow:From train.py:53: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From train.py:10: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING:tensorflow:From train.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /Users/lizhenghui/Downloads/JavaFxProject/src/spatial_transformer.py:174: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From train.py:24: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+Tensor("y_conv:0", shape=(?, 10), dtype=float32)
+WARNING:tensorflow:From train.py:112: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+WARNING:tensorflow:From train.py:113: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From train.py:119: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2019-12-13 19:35:27.773446: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+step 0, training accuracy 0.08
+step 100, training accuracy 0.32
+step 200, training accuracy 0.38
+step 300, training accuracy 0.46
+step 400, training accuracy 0.4
+step 500, training accuracy 0.58
+step 600, training accuracy 0.68
+step 700, training accuracy 0.72
+step 800, training accuracy 0.7
+step 900, training accuracy 0.74
+save model to ./model_1000_batches_with_size_50/
+WARNING:tensorflow:From train.py:30: The name tf.saved_model.signature_def_utils.build_signature_def is deprecated. Please use tf.compat.v1.saved_model.signature_def_utils.build_signature_def instead.
+
+WARNING:tensorflow:From train.py:31: build_tensor_info (from tensorflow.python.saved_model.utils_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.utils.build_tensor_info or tf.compat.v1.saved_model.build_tensor_info.
+test accuracy 0.8284
+erideMacBook-Pro:src lizhenghui$ 
