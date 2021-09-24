@@ -26,7 +26,7 @@ There are two files related to training.
 
 neural network. It is called by **train.py**.
 
-[**spatial_transformer.py**](https:// github.com/tensorflow/models/blob/master/research/transformer/spatial_transformer.py) is copied from official Github page of tensorflow. 
+[**spatial_transformer.py**](https://github.com/tensorflow/models/blob/master/research/transformer/spatial_transformer.py) is copied from official Github page of tensorflow. 
 
 **train.py**
 
